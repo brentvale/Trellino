@@ -1,0 +1,9 @@
+<ul>
+<% boards.each( function(board){ %>
+	<li>
+		<a href="#/boards/<%= board.id %>"><%= board.escape("title") %></a><br>
+		<button class="delete" data-id="<%= board.id %>">DELETE</button>
+		<a href="#/boards/<%= board.id %>/edit">EDIT</a>
+	</li>
+<% })  %>
+</ul>
